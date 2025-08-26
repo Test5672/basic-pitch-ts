@@ -27,6 +27,6 @@ jobs:
         with:
           name: basic-pitch-build
           path: |
-            build/
             cjs/
             esm/
+            types/
