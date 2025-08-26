@@ -22,8 +22,11 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Upload dist folder
+      - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: dist
-          path: dist/
+          name: basic-pitch-build
+          path: |
+            build/
+            cjs/
+            esm/
